@@ -1,0 +1,10 @@
+<div class="todo-overview">
+    <h1>Todo items:</h1>
+    <ul>
+        <% _.each(this.collection.models, function(item, idx) { %>
+            <li data-id="<%= item.get("_id") %>">
+                <%= item.get("description") %>
+            </li>
+        <% }); %>
+    </ul>
+</div>
