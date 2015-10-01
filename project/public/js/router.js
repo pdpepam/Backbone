@@ -24,7 +24,7 @@ define([
 						});
 						view.render();
 					}
-				})
+				});
 			});
 		}
 
